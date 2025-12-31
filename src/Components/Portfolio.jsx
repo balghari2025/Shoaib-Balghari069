@@ -47,6 +47,14 @@ function Portfolio() {
       link: "https://icon-trace.netlify.app/",
       tech: ["C++", "SDL", "OpenGL"],
     },
+    {
+      id: 6,
+      img: react,
+      name: "React Project",
+      description: "A high-performance React project with Material-UI and React Router.",
+      link: "https://alshifa-store.netlify.app/",
+      tech: ["React", "Material-UI", "React Router"],
+    },
   ];
 
   return (
