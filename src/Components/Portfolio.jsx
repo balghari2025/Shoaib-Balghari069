@@ -4,7 +4,7 @@ import nodejs from "../Pic/nodejs.png";
 import server from "../Pic/server.png";
 import react from "../Pic/react.png";
 import cplus from "../Pic/cplus.png";
-import img from "../Pic/E-Commerce.png";
+import img from "../Pic/ecommerce.png";
 import bg from "../Pic/Bg_changer.png";
 import counter from "../Pic/counter.png";
 import FaceRecongnition from "../Pic/FaceRecongnition.png";
@@ -48,7 +48,7 @@ function Portfolio() {
     {
       id: 5,
       img: CC,
-      name: "SkyDanger     Coming Soon",
+      name: "SkyDanger Coming Soon",
       description: "A high-performance C++ project with SDL and OpenGL.",
       link: "https://icon-trace.netlify.app/",
       tech: ["C++", "SDL", "OpenGL"],
