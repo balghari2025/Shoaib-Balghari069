@@ -30,14 +30,14 @@ function Navbar() {
     ];
 
     return (
-        <div className='max-w-screen-2xl container mx-auto px-4 md:px-20 shadow-md fixed top-2 rounded-full z-50 bg-white bg-opacity-90   dark:bg-[#0a1531] dark:opacity-80 dark:text-white transition-colors duration-300'>
+        <div className='max-w-screen-2xl md:max-w-screen-2xl container mx-auto px-4 md:px-20 shadow-md fixed top-2 rounded-full z-50 bg-white bg-opacity-90   dark:bg-[#0a1531] dark:opacity-80 dark:text-white transition-colors duration-300'>
             <div className='flex justify-between items-center h-16'>
                 {/* Logo Section */}
                 <div className='flex items-center space-x-2'>
                     <img src={Pic} className='h-12 w-12 rounded-full' alt="Profile" />
                     <h1 className='ml-2 font-semibold text-xl cursor-pointer'>
                         Shoaib <span className='text-green-800 dark:text-green-400'>Balghari</span>
-                        <p className='text-sm dark:text-gray-300'>Web Developer</p>
+                        <p className='text-sm hidden md:block dark:text-gray-300'>Web Developer</p>
                     </h1>
                 </div>
 

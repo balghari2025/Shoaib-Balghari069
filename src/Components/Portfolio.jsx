@@ -4,56 +4,62 @@ import nodejs from "../Pic/nodejs.png";
 import server from "../Pic/server.png";
 import react from "../Pic/react.png";
 import cplus from "../Pic/cplus.png";
+import img from "../Pic/E-Commerce.png";
+import bg from "../Pic/Bg_changer.png";
+import counter from "../Pic/counter.png";
+import FaceRecongnition from "../Pic/FaceRecongnition.png";
+import Game from "../Pic/Game.png";
+import CC from "../Pic/CC.png";
 
 function Portfolio() {
   const projects = [
     {
       id: 1,
-      img: python,
-      name: "Python Project",
-      description: "A robust Python-based application using Django and React.",
-      link: "https://temp-contverter.netlify.app/",
-      tech: ["Python", "Django", "React"],
+      img: Game,
+      name: "Typing Game",
+      description: "A typing game desktop application using Python, pygame, and tkinter.",
+      link: "https://github.com/balghari2025/TypingGame.git",
+      tech: ["Python", "pygame", "tkinter"],
     },
     {
       id: 2,
-      img: nodejs,
-      name: "NodeJS Project",
-      description: "A scalable Node.js project with Express and React integration.",
+      img: counter ,
+      name: "Character Counter",
+      description: "A simple character counter web application using HTML, CSS, and JavaScript.",
       link: "https://charac-counter.netlify.app/",
-      tech: ["NodeJS", "Express", "React"],
+      tech: ["HTML", "CSS", "JavaScript"],
     },
     {
       id: 3,
-      img: server,
-      name: "Server Project",
-      description: "An efficient backend server setup for web applications.",
-      link: "https://rand-img.netlify.app/",
-      tech: ["NodeJS", "Express", "React"],
+      img: FaceRecongnition,
+      name: "Face Recognition ",
+      description: "A face recognition desktop application using Python, OpenCV, and tkinter.",
+      link: "https://github.com/balghari2025/Face-Recognition.git/",
+      tech: ["Python", "OpenCV", "tkinter"],
     },
     {
       id: 4,
-      img: react,
-      name: "React Project",
+      img: bg,
+      name: "Background Changer Project",
       description: "A modern React app using Material-UI and React Router.",
       link: "https://back-changer.netlify.app/",
-      tech: ["React", "React Router", "Material-UI"],
+      tech: ["React", "React Router"],
     },
     {
       id: 5,
-      img: cplus,
-      name: "C++ Project",
+      img: CC,
+      name: "SkyDanger     Coming Soon",
       description: "A high-performance C++ project with SDL and OpenGL.",
       link: "https://icon-trace.netlify.app/",
       tech: ["C++", "SDL", "OpenGL"],
     },
     {
       id: 6,
-      img: react,
-      name: "React Project",
-      description: "A high-performance React project with Material-UI and React Router.",
+      img: img,
+      name: "E-Commerce Project",
+      description: "A high-performance E-Commerce project with React and Material-UI.",
       link: "https://alshifa-store.netlify.app/",
-      tech: ["React", "Material-UI", "React Router"],
+      tech: ["React", "React Router"],
     },
   ];
 
@@ -74,7 +80,7 @@ function Portfolio() {
             className="bg-white shadow-md rounded-lg dark:bg-[#0b0f1a] dark:text-white overflow-hidden transition-transform transform hover:scale-105"
           >
             <div className="items-center ">
-            <img src={project.img} alt={project.name} className="w-20 h-20 ml-6" />
+            <img src={project.img} alt={project.name} className="w-60 h-40 ml-4 rounded-md mt-1" />
             </div>
             <div className="p-5">
               <h3 className="text-xl dark:text-white font-semibold text-gray-800">{project.name}</h3>
@@ -89,14 +95,24 @@ function Portfolio() {
                   </span>
                 ))}
               </div>
+              <div className="flex justify-between">
+                <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block bg-green-500 text-white px-2 py-2 rounded-lg hover:bg-green-600 transition"
+              >
+                Visit Project
+              </a>
               <a
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 inline-block bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition"
+                className="mt-4 inline-block bg-gray-500 text-white px-2 py-2 rounded-lg hover:bg-gray-600 transition"
               >
-                Visit Project
+                Source Code
               </a>
+              </div>
             </div>
           </div>
         ))}
