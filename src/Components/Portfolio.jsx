@@ -1,15 +1,15 @@
 import React from "react";
-import python from "../Pic/python.png";
-import nodejs from "../Pic/nodejs.png";
-import server from "../Pic/server.png";
-import react from "../Pic/react.png";
-import cplus from "../Pic/cplus.png";
-import img from "../Pic/ecommerce.png";
-import bg from "../Pic/Bg_changer.png";
-import counter from "../Pic/counter.png";
-import FaceRecongnition from "../Pic/FaceRecongnition.png";
-import Game from "../Pic/Game.png";
-import CC from "../Pic/CC.png";
+import python from "../pic/python.png";
+import nodejs from "../pic/nodejs.png";
+import server from "../pic/server.png";
+import react from "../pic/react.png";
+import cplus from "../pic/cplus.png";
+import img from "../pic/ecommerce.png";
+import bg from "../pic/bg_changer.png";
+import counter from "../pic/counter.png";
+import FaceRecongnition from "../pic/facerecongnition.png";
+import Game from "../pic/game.png";
+import CC from "../pic/cc.png";
 
 function Portfolio() {
   const projects = [
