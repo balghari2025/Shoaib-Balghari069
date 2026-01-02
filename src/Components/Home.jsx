@@ -130,7 +130,7 @@ function Home() {
                         />
                         <div
                             ref={iconRef}
-                            className='absolute shadow-blue-950 ml-1 top-[60%] left-[35%] text-6xl md:top-[60%] md:left-[32%] md:text-9xl text-blue-600'
+                            className='absolute shadow-blue-950 ml-1 top-[60%] left-[36%] text-6xl md:top-[60%] md:left-[33%] md:text-9xl text-blue-600'
                         >
                             <FaReact />
                         </div>
