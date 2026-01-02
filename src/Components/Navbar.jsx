@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Pic from '../Pic/img.jpg';
+import pic from '../pic/img.jpg';
 import { IoMenuSharp, IoClose } from "react-icons/io5";
 import { BsMoon, BsSun } from "react-icons/bs"; // Icons for dark mode
 import { Link } from 'react-scroll';
@@ -34,7 +34,7 @@ function Navbar() {
             <div className='flex justify-between items-center h-16'>
                 {/* Logo Section */}
                 <div className='flex items-center space-x-2'>
-                    <img src={Pic} className='h-12 w-12 rounded-full' alt="Profile" />
+                    <img src={pic} className='h-12 w-12 rounded-full' alt="Profile" />
                     <h1 className='ml-2 font-semibold text-xl cursor-pointer'>
                         Shoaib <span className='text-green-800 dark:text-green-400'>Balghari</span>
                         <p className='text-sm hidden md:block dark:text-gray-300'>Web Developer</p>
