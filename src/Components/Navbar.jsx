@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import pic from '../pic/img.jpg';
+import pic from '../assets/img.jpg';
 import { IoMenuSharp, IoClose } from "react-icons/io5";
 import { BsMoon, BsSun } from "react-icons/bs"; // Icons for dark mode
 import { Link } from 'react-scroll';

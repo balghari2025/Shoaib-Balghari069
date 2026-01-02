@@ -1,21 +1,22 @@
 import React from "react";
-import python from "../pic/python.png";
-import nodejs from "../pic/nodejs.png";
-import server from "../pic/server.png";
-import react from "../pic/react.png";
-import cplus from "../pic/cplus.png";
-import img from "../pic/ecommerce.png";
-import bg from "../pic/bg_changer.png";
-import counter from "../pic/counter.png";
-import FaceRecongnition from "../pic/facerecongnition.png";
-import Game from "../pic/game.png";
-import CC from "../pic/cc.png";
+
+import python from "../assets/python.png";
+import nodejs from "../assets/nodejs.png";
+import server from "../assets/server.png";
+import react from "../assets/react.png";
+import cplus from "../assets/cplus.png";
+import img from "../assets/ecommerce.png";
+import bg from "../assets/bg_changer.png";
+import counter from "../assets/counter.png";
+import faceRecognition from "../assets/face_recognition.png";
+import game from "../assets/game.png";
+import cc from "../assets/cc.png";
 
 function Portfolio() {
   const projects = [
     {
       id: 1,
-      img: Game,
+      img: game,
       name: "Typing Game",
       description: "A typing game desktop application using Python, pygame, and tkinter.",
       link: "https://github.com/balghari2025/TypingGame.git",
@@ -31,7 +32,7 @@ function Portfolio() {
     },
     {
       id: 3,
-      img: FaceRecongnition,
+      img: faceRecognition,
       name: "Face Recognition ",
       description: "A face recognition desktop application using Python, OpenCV, and tkinter.",
       link: "https://github.com/balghari2025/Face-Recognition.git/",
@@ -47,7 +48,7 @@ function Portfolio() {
     },
     {
       id: 5,
-      img: CC,
+      img: cc,
       name: "SkyDanger Coming Soon",
       description: "A high-performance C++ project with SDL and OpenGL.",
       link: "https://icon-trace.netlify.app/",

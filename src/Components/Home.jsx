@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import Pic from '../Pic/1.png';
+import pic from '../assets/1.png';
 import { ReactTyped } from "react-typed";
 import { SiFacebook } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
@@ -124,7 +124,7 @@ function Home() {
                     <div className='md:w-1/2 order-1 md:order-2 relative'>
                         <img
                             ref={imageRef}
-                            src={Pic}
+                            src={pic}
                             className='rounded-full shadow-blue-400 ml-4 md:w-[550px] md:h-[450px] mb-10'
                             alt=""
                         />
