@@ -125,12 +125,12 @@ function Home() {
                         <img
                             ref={imageRef}
                             src={pic}
-                            className='rounded-full shadow-blue-400 ml-4 md:w-[550px] md:h-[450px] mb-10'
+                            className='rounded-full shadow-blue-400  md:w-[550px] md:h-[450px] mb-10'
                             alt=""
                         />
                         <div
                             ref={iconRef}
-                            className='absolute shadow-blue-950 ml-1 top-[60%] left-[41%] text-6xl md:top-[60%] md:left-[38%] md:text-9xl text-blue-600'
+                            className='absolute shadow-blue-950 ml-1 top-[60%] left-[36%] text-6xl md:top-[60%] md:left-[33%] md:text-9xl text-blue-600'
                         >
                             <FaReact />
                         </div>
