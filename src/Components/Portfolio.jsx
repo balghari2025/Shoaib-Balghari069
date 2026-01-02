@@ -63,90 +63,93 @@ function Portfolio() {
       tech: ["React", "React Router"],
     },
   ];
+return (
+    <div
+      name="Portfolio"
+      className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10"
+    >
+      {/* Heading */}
+      <div className="text-center mb-10">
+        <h2 className="text-4xl font-bold dark:text-white text-gray-800 relative inline-block">
+          Portfolio
+          <span className="bg-green-500 h-1 w-16 absolute -bottom-2 left-1/2 transform -translate-x-1/2"></span>
+        </h2>
+        <p className="mt-3 text-lg dark:text-white text-gray-600">
+          Showcasing my recent projects
+        </p>
+      </div>
 
-  return (
-  <div
-    name="Portfolio"
-    className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10"
-  >
-    <div className="text-center mb-10">
-      <h2 className="text-4xl font-bold dark:text-white text-gray-800 relative inline-block">
-        Portfolio
-        <span className="bg-green-500 h-1 w-16 absolute -bottom-2 left-1/2 transform -translate-x-1/2"></span>
-      </h2>
-      <p className="mt-3 text-lg dark:text-white text-gray-600">
-        Showcasing my recent projects
-      </p>
-    </div>
+      {/* Projects Grid */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {projects.map((project) => (
+          <div
+            key={project.id}
+            className="bg-white dark:bg-[#0b0f1a] dark:text-white
+            shadow-md rounded-xl overflow-hidden
+            flex flex-col h-full transition-transform hover:scale-[1.02]"
+          >
+            {/* IMAGE (Netlify Safe) */}
+            <div className="w-full h-44 overflow-hidden bg-[#0f172a]">
+              <img
+                src={project.img}
+                alt={project.name}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
 
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {projects.map((project) => (
-        <div
-          key={project.id}
-          className="bg-white dark:bg-[#0b0f1a] dark:text-white shadow-md rounded-xl overflow-hidden
-          flex flex-col h-full transition-transform hover:scale-[1.02]"
-        >
-          {/* Image */}
-          <div className="flex justify-center mt-4">
-            <img
-              src={project.img}
-              alt={project.name}
-              className="w-64 h-40 object-cover rounded-md"
-            />
-          </div>
+            {/* CONTENT */}
+            <div className="p-5 flex flex-col flex-grow">
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
+                {project.name}
+              </h3>
 
-          {/* Content */}
-          <div className="p-5 flex flex-col flex-grow">
-            <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
-              {project.name}
-            </h3>
+              <p className="text-gray-600 dark:text-gray-300 mt-2 text-sm flex-grow">
+                {project.description}
+              </p>
 
-            <p className="text-gray-600 dark:text-gray-300 mt-2 text-sm flex-grow">
-              {project.description}
-            </p>
+              {/* TECH STACK */}
+              <div className="mt-3 flex flex-wrap gap-2">
+                {project.tech.map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-3 py-1 text-sm rounded-full
+                    bg-gray-200 text-gray-700
+                    dark:bg-[#061231] dark:text-white"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
 
-            {/* Tech Stack */}
-            <div className="mt-3 flex flex-wrap gap-2">
-              {project.tech.map((tech) => (
-                <span
-                  key={tech}
-                  className="px-3 py-1 text-sm rounded-full
-                  bg-gray-200 text-gray-700
-                  dark:bg-[#061231] dark:text-white"
+              {/* BUTTONS */}
+              <div className="flex gap-4 mt-auto pt-4">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center bg-green-500 text-white py-2 rounded-lg
+                  hover:bg-green-600 transition"
                 >
-                  {tech}
-                </span>
-              ))}
-            </div>
+                  Visit Project
+                </a>
 
-            {/* Buttons */}
-            <div className="flex gap-4 mt-auto pt-4">
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 text-center bg-green-500 text-white py-2 rounded-lg
-                hover:bg-green-600 transition"
-              >
-                Visit Project
-              </a>
-
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 text-center bg-gray-500 text-white py-2 rounded-lg
-                hover:bg-gray-600 transition"
-              >
-                Source Code
-              </a>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center bg-gray-500 text-white py-2 rounded-lg
+                  hover:bg-gray-600 transition"
+                >
+                  Source Code
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
 }
 
 export default Portfolio;
