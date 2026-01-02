@@ -93,7 +93,7 @@ return (
               <img
                 src={project.img}
                 alt={project.name}
-                className="w-full h-full object-cover"
+                className="w-full h-56 object-cover"
                 loading="lazy"
               />
             </div>
