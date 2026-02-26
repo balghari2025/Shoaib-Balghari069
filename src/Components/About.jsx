@@ -37,40 +37,47 @@ const About = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-12 ">
             <div
-              ref={leftRef}
-              className="bg-white  dark:bg-[#0b0f1a] dark:text-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-            >
-              <div className="flex items-center mb-6 ">
-                <div className="bg-green-100 p-3 rounded-full mr-4 dark:bg-[#061231] dark:text-white">
-                  <FaCode className="text-green-600 text-2xl" />
-                </div>
-                <h3 className="text-2xl font-semibold dark:text-white text-gray-800">
-                  Technical Expertise
-                </h3>
-              </div>
-              <p className="text-gray-600 leading-relaxed dark:text-white mb-6">
-                As a full-stack developer, I specialize in building robust
-                applications using modern technologies. My core competencies
-                include:
-              </p>
-              <div className="flex flex-wrap gap-3 mb-6">
-                {["Python", "JavaScript", "React", "C++", "Node.js", "MongoDB"].map(
-                  (skill) => (
-                    <span
-                      key={skill}
-                      className="bg-green-100 text-green-700 px-4 py-2  dark:bg-[#061231] dark:text-white rounded-full text-sm font-medium"
-                    >
-                      {skill}
-                    </span>
-                  )
-                )}
-              </div>
-              <p className="text-gray-600 dark:text-white leading-relaxed">
-                I focus on creating efficient, scalable solutions that solve
-                real-world problems while maintaining exceptional user
-                experiences.
-              </p>
-            </div>
+  ref={leftRef}
+  className="bg-white dark:bg-[#0b0f1a] dark:text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+>
+  <div className="flex items-center mb-6">
+    <div className="bg-green-100 p-3 rounded-full mr-4 dark:bg-[#061231] dark:text-white">
+      <FaCode className="text-green-600 text-2xl" />
+    </div>
+    <h3 className="text-2xl font-semibold dark:text-white text-gray-800">
+      Technical Expertise
+    </h3>
+  </div>
+
+  <p className="text-gray-600 leading-relaxed dark:text-gray-300 mb-6">
+    I build modern, scalable web applications using industry-standard
+    technologies. My primary focus is full-stack development with clean UI,
+    secure backend systems, and optimized performance.
+  </p>
+
+  <div className="flex flex-wrap gap-3 mb-6">
+    {[
+      "Python",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Tailwind CSS"
+    ].map((skill) => (
+      <span
+        key={skill}
+        className="bg-green-100 text-green-700 px-4 py-2 dark:bg-[#061231] dark:text-green-400 rounded-full text-sm font-medium transition hover:scale-105"
+      >
+        {skill}
+      </span>
+    ))}
+  </div>
+
+  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+    I focus on writing clean, maintainable code and delivering user-friendly
+    interfaces that provide real business value.
+  </p>
+</div>
             <div className="space-y-8">
               {/* Education */}
               <div

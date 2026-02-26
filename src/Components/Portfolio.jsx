@@ -11,11 +11,20 @@ import counter from "../assets/counter.png";
 import faceRecognition from "../assets/face_recognition.png";
 import game from "../assets/game.png";
 import cc from "../assets/cc.png";
+import invoice from "../assets/invoice.png";
 
 function Portfolio() {
   const projects = [
     {
       id: 1,
+      img: invoice,
+      name: "Invoice Generator",
+      description: "A modern React app using Material-UI and React Router.",
+      link: "https://invoicegenerator-1st.netlify.app/",
+      tech: ["React", "Express", "Node.js"],
+    },
+    {
+      id: 2,
       img: game,
       name: "Typing Game",
       description: "A typing game desktop application using Python, pygame, and tkinter.",
@@ -23,7 +32,7 @@ function Portfolio() {
       tech: ["Python", "pygame", "tkinter"],
     },
     {
-      id: 2,
+      id: 3,
       img: counter ,
       name: "Character Counter",
       description: "A simple character counter web application using HTML, CSS, and JavaScript.",
@@ -31,7 +40,7 @@ function Portfolio() {
       tech: ["HTML", "CSS", "JavaScript"],
     },
     {
-      id: 3,
+      id: 4,
       img: faceRecognition,
       name: "Face Recognition ",
       description: "A face recognition desktop application using Python, OpenCV, and tkinter.",
@@ -39,7 +48,7 @@ function Portfolio() {
       tech: ["Python", "OpenCV", "tkinter"],
     },
     {
-      id: 4,
+      id: 5,
       img: bg,
       name: "Background Changer Project",
       description: "A modern React app using Material-UI and React Router.",
@@ -47,7 +56,7 @@ function Portfolio() {
       tech: ["React", "React Router"],
     },
     {
-      id: 5,
+      id: 6,
       img: cc,
       name: "SkyDanger Coming Soon",
       description: "A high-performance C++ project with SDL and OpenGL.",
@@ -55,7 +64,7 @@ function Portfolio() {
       tech: ["C++", "SDL", "OpenGL"],
     },
     {
-      id: 6,
+      id: 7,
       img: img,
       name: "E-Commerce Project",
       description: "A high-performance E-Commerce project with React and Material-UI.",

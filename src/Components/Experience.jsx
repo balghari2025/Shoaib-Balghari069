@@ -1,29 +1,31 @@
 import React from "react";
-
 const experiences = [
   {
     id: 1,
-    role: "Frontend Developer",
-    company: "Tech Solutions",
-    duration: "Jan 2023 - Present",
-    description: "Developed interactive UI components using React, Tailwind CSS, and Material-UI.",
-    technologies: ["React", "Tailwind", "Material-UI"],
+    role: "Frontend Developer Intern",
+    company: "Digital Empowerment Network",
+    duration: "2024",
+    description:
+      "Completed a hands-on internship focused on modern frontend development. Built responsive user interfaces, improved UI/UX, and worked on real-world web projects using React and Tailwind CSS.",
+    technologies: ["React", "Tailwind CSS", "JavaScript", "Git"],
   },
   {
     id: 2,
-    role: "Backend Developer",
-    company: "Code Innovators",
-    duration: "Jul 2022 - Dec 2022",
-    description: "Designed and optimized REST APIs with Node.js, Express, and MongoDB.",
-    technologies: ["Node.js", "Express", "MongoDB"],
+    role: "Full-Stack Developer",
+    company: "Personal E-Commerce Project",
+    duration: "2025",
+    description:
+      "Developed a fully functional e-commerce web application with authentication, product management, cart system, and order handling. Implemented responsive design and secure backend APIs.",
+    technologies: ["React", "Node.js", "Express", "MongoDB"],
   },
   {
     id: 3,
-    role: "Software Engineer Intern",
-    company: "XYZ Software",
-    duration: "Mar 2022 - Jun 2022",
-    description: "Worked on bug fixes, testing, and developing small features in a team setting.",
-    technologies: ["JavaScript", "Git", "Agile"],
+    role: "Freelance Web Developer",
+    company: "Self-Employed",
+    duration: "Ongoing",
+    description:
+      "Building modern web applications and portfolio projects, focusing on clean UI design, performance optimization, and scalable backend systems.",
+    technologies: ["React", "Tailwind CSS", "MongoDB", "REST APIs"],
   },
 ];
 
